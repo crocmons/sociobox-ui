@@ -1,5 +1,6 @@
 import  Button from "@/components/Button";
 import Image from "next/image";
+import Link from "next/link";
 import { BiRightArrowAlt } from "react-icons/bi";
 
 const About = () => {
@@ -22,9 +23,9 @@ const About = () => {
         <p className='mt-6 lg:max-w-lg info-text'>
           Our dedication to detail and excellence ensures your satisfaction
         </p>
-        <div className='mt-11'>
-          <Button label='View details' iconURL={<BiRightArrowAlt />}/>
-        </div>
+        <Link href={'https://www.instagram.com/thesociobox'} className='mt-11'>
+          <Button label='Our Instagram Page' iconURL={<BiRightArrowAlt />}/>
+        </Link>
       </div>
 
       <div className='flex-1 flex justify-center items-center'>

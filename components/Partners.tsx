@@ -3,7 +3,7 @@ import Image from 'next/image'
 import React from 'react'
 import styled, {keyframes, css} from 'styled-components'
 
-const Clients = () => {
+const Partners = () => {
 
     const row1 = [
         '/adobelogo.png',
@@ -37,14 +37,14 @@ const Clients = () => {
         <MarqueeGroup>
           {row1.map((ele) => (
             <ImageGroup key={ele}>
-              <Images>
+              {/* <Images> */}
                 <Image src={ele} alt="Partner" width={100} height={100} />
-              </Images>
+              {/* </Images> */}
             </ImageGroup>
           ))}
         </MarqueeGroup>
       </Marquee>
-      <Marquee>
+      {/* <Marquee>
         <MarqueeGroup2>
           {row2.map((el) => (
             <ImageGroup key={el}>
@@ -63,13 +63,13 @@ const Clients = () => {
             </ImageGroup>
           ))}
         </MarqueeGroup2>
-      </Marquee>
+      </Marquee> */}
     </Wrapper>
   </>
   )
 }
 
-export default Clients
+export default Partners
 
 
 const Wrapper = styled.div`

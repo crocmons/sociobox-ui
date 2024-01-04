@@ -1,4 +1,5 @@
 import About from '@/components/About'
+import Clients from '@/components/Clients'
 import Form from '@/components/Form'
 import HeroSection from '@/components/HeroSection'
 import Partners from '@/components/Partners'
@@ -11,7 +12,7 @@ export default function Home() {
       <HeroSection />
       </section>
       <section>
-        <Partners />
+        <Clients />
       </section>
       <section className='padding'>
         <PopularInfluencer />

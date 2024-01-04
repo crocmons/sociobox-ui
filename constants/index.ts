@@ -21,6 +21,8 @@ export const statistics = [
     
 ];
 
+
+
 export const influencers = [
     {
         thumbnail: influencer1,
