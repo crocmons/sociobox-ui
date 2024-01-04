@@ -379,8 +379,8 @@ const ContactForm = () => {
 
         {/* navigation */}
         
-        <div className='mt-10 flex flex-col  mx-auto pt-5'>
-            <div className='flex justify-between'>
+        <div className='mt-10 flex flex-col gap-10 mx-auto pt-5'>
+            <div className='flex justify-between gap-12'>
 
 {/* prev */}
         <button type='button' onClick={prev} disabled={currentStep === 0} className='rounded bg-white px-2 py-1 text-sm font-semibold text-sky-900 shadow-sm ring-1 ring-inset ring-sky-300 hover:bg-sky-50 disabled:cursor-not-allowed disabled:opacity-50'>
