@@ -27,7 +27,7 @@ const HeroSection = () => {
   return (
     <section
     id='home'
-    className='w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 xl:max-w-[1440px] mt-6 md:mt-16 mx-auto '
+    className='w-full flex xl:flex-row flex-col justify-center min-h-screen gap-10 xl:max-w-[1440px] mt-6 md:mt-24 mx-auto '
     >
    <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x mt-24 md:mt-0">
     <p className='text-xl font-medium text-[#FF1791]'>Azhar shaikh presents</p>
