@@ -5,6 +5,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import {useForm, SubmitHandler} from "react-hook-form"
 import {motion} from 'framer-motion' 
 import {FormDataSchema} from '@/lib/schema'
+import emailjs from "@emailjs/browser"
 import toast from 'react-hot-toast';
 
 
@@ -23,7 +24,9 @@ const ContactForm = () => {
     },
         
     ];
-
+    
+    const [err, setErr] = useState(false)
+    const [success, setSuccess] = useState(false)
     const [prevStep, setPrevStep] = useState(0)
     const [currentStep, setcurrentStep] = useState(0)
     const delta = currentStep - prevStep
@@ -64,27 +67,18 @@ const ContactForm = () => {
         resolver:zodResolver(FormDataSchema)
     })
 
-    const processForm:SubmitHandler<Inputs> = async(data) =>{
+    const processForm:SubmitHandler<Inputs> = async (data) =>{
         console.log(data)
-            try {
-                const response = await fetch("/api/send", {
-                  method: "POST",
-                  headers: {
-                    "Content-Type": "application/json",
-                  },
-                  body: JSON.stringify(data),
-                });
-          
-                if (response.ok) {
-                  reset()
-                  toast.success(`Hi ${data.fullName}, your message has been sent successfully!`);
-                } else {
-                  toast.error("An error occurred while sending the email.");
-                }
-              } catch (error) {
-                console.error("Error sending email:", error);
-                toast.error("An error occurred while sending the email.");
-              }
+        await emailjs.sendForm('service_cl81fsw', 'template_k7dllwp', 'SZaTpe3tByV38AxZK')
+        .then((success) => {
+           setSuccess(true)
+           alert(success.text)   
+        }, (error) => {
+          setErr(true)
+            alert(error.text);
+        });
+
+        reset()
         
     }
 
@@ -154,6 +148,7 @@ const ContactForm = () => {
                         {errors.fullName.message}
                     </p>
                 )}
+                
               </div>
               <div className="flex flex-col">
                 <label htmlFor="email">Email</label>
@@ -217,10 +212,12 @@ const ContactForm = () => {
                 />
               </div>
               <div className="flex flex-row justify-center">
-                <button type="submit" className="w-40 h-14 bg-[#FF1791] text-white text-lg font-semibold hover:bg-[#531789] rounded-full" >
+                <button className="w-40 h-14 bg-[#FF1791] text-white text-lg font-semibold hover:bg-[#531789] rounded-full" >
                     Submit
                 </button>
               </div>
+              {err && "Failed to send your mail! Please try again later..."}
+                {success && "Successfully Send your mail!" }
         </form>
         </motion.div>
         )}
@@ -369,10 +366,12 @@ const ContactForm = () => {
                 />
             </div>
             <div className="flex flex-row justify-center">
-              <button type="submit" className="w-40 h-14 bg-[#FF1791] text-white text-lg font-semibold hover:bg-[#531789] rounded-full" >
+              <button className="w-40 h-14 bg-[#FF1791] text-white text-lg font-semibold hover:bg-[#531789] rounded-full" >
                   Submit
               </button>
             </div>
+            {err && "Failed to send your mail! Please try again later..."}
+            {success && "Successfully Send your mail!" }
           </form>
           </motion.div>
         )}

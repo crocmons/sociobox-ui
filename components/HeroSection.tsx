@@ -34,6 +34,7 @@ const HeroSection = () => {
     <h1 className='mt-10 xl:py-4 py-2 text-4xl xl:text-8xl font-palanquin sm:max-sm:text-[72px] sm:max-sm:leading-[82] font-bold leading-none mx-auto '>
 
     <span className='text-[14px] xl:text-4xl'>Influencer Marketing Made Easy </span>
+    <br />
 
       <span className='xl:bg-purple-200 xl:whitespace-nowrap relative xl:z-10 xl:pr-10 xl:bg-opacity-10 mt-6'>The Socio Box</span>
       
