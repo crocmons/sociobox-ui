@@ -14,7 +14,7 @@ const Navbar = () => {
 
   return (
     <div>
-        <nav className="w-full bg-slate-50 fixed top-0 left-0 right-0 z-20">
+        <nav className=" w-full bg-white fixed top-0 left-0 right-0 z-20">
           <div className=" justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
 
             <div>
@@ -29,7 +29,7 @@ const Navbar = () => {
 
                    <div className="md:hidden">
                      <button 
-                     className="p-2 text-gray-800 text-2xl rounded-md outline-none focus:border-gray-400 mx-auto"
+                     className="p-2 text-[#531789] text-2xl rounded-md outline-none focus:border-gray-400 mx-auto"
                      onClick={()=>setClick(!click)}
                      >
                      {
@@ -47,22 +47,22 @@ const Navbar = () => {
             <div>
                 <div className={`flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 ${click ? 'p-12 md:p-0 block' : 'hidden' }`}>
                       <ul className=" h-screen md:h-auto items-center justify-center text-center md:flex">
-                        <li className="pb-6 text-xl text-slate-900 font-medium py-2 md:px-6 text-center border-b-2 md:border-b-0 md:hover:text-purple-600 md:hover:bg-transparent">
-                        <Link href='#works' onClick={()=>setClick(!click)}>
+                        <li className="pb-6 text-xl text-[#531789] font-medium py-2 md:px-6 text-center border-b-2 md:border-b-0 md:hover:text-purple-600 md:hover:bg-transparent">
+                        <Link href='/' onClick={()=>setClick(!click)}>
                         Home
                         </Link>
                         </li>
-                        <li className="pb-6 text-xl text-slate-900 font-medium py-2 md:px-6 text-center border-b-2 md:border-b-0 md:hover:text-purple-600 md:hover:bg-transparent">
+                        <li className="pb-6 text-xl text-[#531789] font-medium py-2 md:px-6 text-center border-b-2 md:border-b-0 md:hover:text-purple-600 md:hover:bg-transparent">
                         <Link href='#about' onClick={()=>setClick(!click)}>
                         About
                         </Link>
                         </li>
-                        <li className="pb-6 text-xl text-slate-900 font-medium py-2 md:px-6 text-center border-b-2 md:border-b-0 md:hover:text-purple-600 md:hover:bg-transparent">
+                        <li className="pb-6 text-xl text-[#531789] font-medium py-2 md:px-6 text-center border-b-2 md:border-b-0 md:hover:text-purple-600 md:hover:bg-transparent">
                         <Link href='#influencers' onClick={()=>setClick(!click)}>
                         Influencers
                         </Link>
                         </li>
-                        <button className="mt-2 md:hidden py-2 px-4  text border border-slate-700 text-center items-center justify-center text-black">
+                        <button className="mt-2 md:hidden py-2 px-4  text border border-slate-700 text-center items-center justify-center text-[#531789]">
                         <Link href="#contact">
                         Contact Us
                         </Link>
@@ -71,7 +71,7 @@ const Navbar = () => {
                       
                 </div>
             </div>
-                        <button className="hidden md:flex py-2 px-4 text border border-slate-700 text-center items-center justify-center text-black">
+                        <button className="hidden md:flex py-2 px-4 text border border-[#531789] text-center items-center justify-center text-[#531789]">
                         <Link href="#">
                         Contact Us
                         </Link>

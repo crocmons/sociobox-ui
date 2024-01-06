@@ -2,23 +2,28 @@ import About from '@/components/About'
 import Clients from '@/components/Clients'
 import Form from '@/components/Form'
 import HeroSection from '@/components/HeroSection'
-import Partners from '@/components/Partners'
 import PopularInfluencer from '@/components/PopularInfluencer'
+import Posts from '@/components/Posts'
+// import TestCard from '@/components/TestCard'
 
 export default function Home() {
   return (
-    <main className='mx-auto relative'>
-      <section className='xl:padding-l wide:padding-r padding-b'>
+    <main className='mx-auto'>
+      <section className='xl:padding-l padding-b'>
       <HeroSection />
       </section>
       <section>
         <Clients />
       </section>
-      <section className='padding'>
+      <section >
         <PopularInfluencer />
+        {/* <TestCard /> */}
       </section>
-      <section className='padding'>
+      <section className='padding' >
         <About />
+      </section>
+      <section className='padding' >
+        <Posts />
       </section>
       <section>
         <Form />

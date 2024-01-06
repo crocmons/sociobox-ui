@@ -9,7 +9,6 @@ const Clients = () => {
     const settings = {
         infinite:true,
         slidesToShow:3,
-        slidesToScroll:1,
         autoplay:true,
         speed:3000,
         autoplaySpeed:3000,
@@ -26,8 +25,8 @@ const Clients = () => {
         
       ];
   return (
-    <div className='my-5 py-5'>
-        <h2 className='text-red-400 mt-8 py-2 font-bold text-5xl text-center'>Our Brands</h2>
+    <div className='my-12 py-5 '>
+        <h2 className='text-[#531789] mt-8 py-2 font-bold text-5xl text-center'>Our <span className='text-[#FF1791]'>Brands</span></h2>
         <Slider {...settings}>
           {row1.map((ele, i)=>(
             <div key={i} className='flex flex-col items-center justify-center my-0 mx-auto text-center py-10 px-2'>

@@ -4,14 +4,16 @@ import Image from "next/image";
 
 const Footer = () => {
   return (
-    <footer className=' bg-black padding-x padding-t pb-8 text-white'>
+    <footer className=' bg-[#3C1642] padding-x padding-t pb-8 text-white'>
       <div className='flex justify-between items-start gap-20 flex-wrap max-lg:flex-col'>
         <div className='flex flex-col items-start'>
           <Link href='/'>
-            <h1 className="font-bold text-3xl">UniCraft</h1>
+            <h1 className="font-bold text-3xl">The Socio Box
+</h1>
           </Link>
           <p className='mt-6 text-base leading-7 font-montserrat text-white sm:max-w-sm'>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea eos doloribus minima?
+          We fuel journeys that make a mark
+
           </p>
           <div className='flex items-center gap-5 mt-8'>
             {socialMedia.map((icon) => (

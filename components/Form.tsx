@@ -19,9 +19,10 @@ const Form: React.FC = () => {
     <div className="my-4 xl:my-8 mx-auto flex md:flex-row flex-1 gap-4 flex-nowrap flex-col justify-between px-4" id="contact">
         
         <div className="lg:max-container padding-container flex w-full flex-col lg:w-full justify-center text-center items-center mx-auto px-4 xl:px-0">
-          <h2 className="font-bold text-5xl text-red-400 py-2">Contact Us</h2>
-          <p className='font-montserrat text-slate-600 text-lg font-medium leading-10 py-2 sm:max-w-xl mx-auto'>
-            Now that you know us and our work, it is possible that you might be looking forward to discuss your business and services or digital requirements with us to get the appropriate solutions for your brand. Kindly feel free to take an appointment with us, our executives would be happy to guide you and build a latest digital platform for your brand.
+          <h2 className="font-bold text-5xl text-[#FF1791] py-2">Contact Us</h2>
+          <p className='font-montserrat text-[#3C1642] text-lg font-normal leading-10 py-2 sm:max-w-xl mx-auto'>
+          Stop scrolling, start scaling. Elevate your brand with personalised influencer solutions from The Socio Box.
+
           </p>
          
        

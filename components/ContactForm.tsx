@@ -99,17 +99,17 @@ const ContactForm = () => {
     <>
         {/* steps */}
       <nav aria-label='Progress' className='flex flex-row'>
-        <ol role='list' className='space-y-0 flex gap-6 xl:gap-2 w-full justify-between items-center text-center py-4 xl:py-6 mx-auto xl:w-[30vw] text-gray-600 md:space-x-8 md:space-y-0'>
+        <ol role='list' className='space-y-0 flex gap-6 xl:gap-2 w-full justify-between items-center text-center py-4 xl:py-6 mx-auto xl:w-[30vw] text-[#2D1032] md:space-x-8 md:space-y-0'>
           {steps.map((step, index) => (
             <li key={step.name} className='flex-1'>
               {currentStep > index ? (
-                <div className='group flex w-full flex-col border-l-4 border-sky-600 py-2 pl-4 transition-colors md:border-l-0 md:border-t-4 md:pb-0 md:pl-0 md:pt-4 cursor-pointer' onClick={prev}>
+                <div className='group flex w-full flex-col border-l-4 border-[#55178E] py-2 pl-4 transition-colors md:border-l-0 md:border-t-4 md:pb-0 md:pl-0 md:pt-4 cursor-pointer' onClick={prev}>
                   
                   <span className='text-start uppercase text-sm xl:text-xl font-bold'>{step.name}</span>
                 </div>
               ) : currentStep === index ? (
                 <div
-                  className='flex w-full flex-col border-l-4 border-sky-600 py-2 pl-4 md:border-l-0 md:border-t-4 md:pb-0 md:pl-0 md:pt-4 cursor-pointer'
+                  className='flex w-full flex-col border-l-4 border-[#55178E] py-2 pl-4 md:border-l-0 md:border-t-4 md:pb-0 md:pl-0 md:pt-4 cursor-pointer'
                   aria-current='step'
                   onClick={next}  
                    >
@@ -136,7 +136,7 @@ const ContactForm = () => {
         >
 
         <form
-            className="w-full h-auto lg:w-[500px] space-y-6 mt-4 mx-auto flex flex-col bg-slate-200 border border-gray-100 shadow-2xl p-4 xl:p-8 rounded-lg justify-center text-black text-start "
+            className="w-full h-auto lg:w-[500px] space-y-6 mt-4 mx-auto flex flex-col bg-slate-200 border border-gray-100 shadow-2xl p-4 xl:p-8 rounded-lg justify-center text-[#531789] text-start "
             onSubmit={handleSubmit(processForm)}
             >
                 <div className="flex flex-col">
@@ -217,7 +217,7 @@ const ContactForm = () => {
                 />
               </div>
               <div className="flex flex-row justify-center">
-                <button type="submit" className="w-40 h-14 bg-[#0077B6] text-white text-lg font-semibold hover:bg-[#7209B7] rounded-full" >
+                <button type="submit" className="w-40 h-14 bg-[#FF1791] text-white text-lg font-semibold hover:bg-[#531789] rounded-full" >
                     Submit
                 </button>
               </div>
@@ -233,7 +233,7 @@ const ContactForm = () => {
           >
 
             <form
-            className="w-full h-auto lg:w-[500px] space-y-6 mt-4 mx-auto bg-slate-200 border border-gray-100 shadow-2xl p-4 xl:p-8 rounded-lg justify-center items-center text-black text-start"
+            className="w-full h-auto lg:w-[500px] space-y-6 mt-4 mx-auto bg-slate-200 border border-gray-100 shadow-2xl p-4 xl:p-8 rounded-lg justify-center items-center text-[#531789] text-start"
             onSubmit={handleSubmit(processForm)} 
             
           >
@@ -369,7 +369,7 @@ const ContactForm = () => {
                 />
             </div>
             <div className="flex flex-row justify-center">
-              <button type="submit" className="w-40 h-14 bg-[#0077B6] text-white text-lg font-semibold hover:bg-[#7209B7] rounded-full" >
+              <button type="submit" className="w-40 h-14 bg-[#FF1791] text-white text-lg font-semibold hover:bg-[#531789] rounded-full" >
                   Submit
               </button>
             </div>
@@ -383,7 +383,7 @@ const ContactForm = () => {
             <div className='flex justify-between gap-12'>
 
 {/* prev */}
-        <button type='button' onClick={prev} disabled={currentStep === 0} className='rounded bg-white px-2 py-1 text-sm font-semibold text-sky-900 shadow-sm ring-1 ring-inset ring-sky-300 hover:bg-sky-50 disabled:cursor-not-allowed disabled:opacity-50'>
+        <button type='button' onClick={prev} disabled={currentStep === 0} className='rounded bg-[#55178E] px-2 py-1 text-sm font-bold text-[#F1FAEE] shadow-sm ring-1 ring-inset ring-[#531789] hover:bg-[#FF1789] disabled:cursor-not-allowed disabled:opacity-50'>
         <svg
               xmlns='http://www.w3.org/2000/svg'
               fill='none'
@@ -405,7 +405,7 @@ const ContactForm = () => {
         <button  type='button'
             onClick={next}
             disabled={currentStep === steps.length - 1}
-            className='rounded bg-white px-2 py-1 text-sm font-semibold text-sky-900 shadow-sm ring-1 ring-inset ring-sky-300 hover:bg-sky-50 disabled:cursor-not-allowed disabled:opacity-50'
+            className='rounded bg-[#55178E] px-2 py-1 text-sm font-bold text-[#F1FAEE] shadow-sm ring-1 ring-inset ring-[#531789] hover:bg-[#FF1789] disabled:cursor-not-allowed disabled:opacity-50'
           >
            <svg
               xmlns='http://www.w3.org/2000/svg'

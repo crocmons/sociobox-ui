@@ -21,23 +21,55 @@ export const statistics = [
     
 ];
 
-
+export const posts = [
+    {
+      title: "Do millennials care about saving?",
+      description:
+        "Curabitur tincidunt sed neque id pretium. Aenean volutpat tristique tincidunt. Pellentesque ac urna.",
+  
+      image: "/banner1.png",
+    },
+    {
+      title: "Do millennials care about saving?",
+      description:
+        "Curabitur tincidunt sed neque id pretium. Aenean volutpat tristique tincidunt. Pellentesque ac urna.",
+  
+      image: "/banner1.png",
+    },
+    {
+      title: "Do millennials care about saving?",
+      description:
+        "Curabitur tincidunt sed neque id pretium. Aenean volutpat tristique tincidunt. Pellentesque ac urna.",
+  
+      image: "/banner1.png",
+    },
+    {
+      title: "Do millennials care about saving?",
+      description:
+        "Curabitur tincidunt sed neque id pretium. Aenean volutpat tristique tincidunt. Pellentesque ac urna.",
+  
+      image: "/banner1.png",
+    },
+  
+  
+  ];
+  
 
 export const influencers = [
     {
-        thumbnail: influencer1,
+        thumbnail: '/banner1.png',
         socialInfluencer: influencer1,
     },
     {
-        thumbnail: influencer2,
+        thumbnail: '/banner1.png',
         socialInfluencer: influencer2,
     },
     {
-        thumbnail: influencer3,
+        thumbnail: '/banner1.png',
         socialInfluencer: influencer3,
     },
     {
-        thumbnail: influencer4,
+        thumbnail: '/banner1.png',
         socialInfluencer: influencer4,
     },
 ];
@@ -59,11 +91,21 @@ export const populars = [
         name: "John Doe",
         desc: "Facebook Influencer",
     },
-    {
-        imgURL: influencer1,
-        name: "Nsemeke",
-        desc: "Instagram Influencer",
-    },
+    // {
+    //     imgURL: influencer1,
+    //     name: "Nsemeke",
+    //     desc: "Instagram Influencer",
+    // },
+    // {
+    //     imgURL: influencer1,
+    //     name: "Nsemeke",
+    //     desc: "Instagram Influencer",
+    // },
+    // {
+    //     imgURL: influencer1,
+    //     name: "Nsemeke",
+    //     desc: "Instagram Influencer",
+    // },
 ];
 
 

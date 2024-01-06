@@ -2,13 +2,13 @@ import Image from "next/image";
 
 const Card = ({ imgURL, name, desc }:any) => {
   return (
-    <div className='flex flex-1 flex-col w-full max-sm:w-full'>
-      <Image src={imgURL} alt={name} className='w-[282px] h-[282px]' />
-      <div className='mt-8 flex justify-start gap-2.5'>
+    <div className='flex flex-1 flex-col xl:py-5 xl:w-full max-sm:w-full w-[50%]'>
+      <Image src={imgURL} alt={name} width={300} height={300} className="object-contain" />
+      {/* <div className='mt-8 flex justify-start gap-2.5'>
         <p className='font-montserrat text-xl leading-normal text-slate-gray'>
           Latest
         </p>
-      </div>
+      </div> */}
       <h3 className='mt-2 text-2xl leading-normal font-semibold font-palanquin'>
         {name}
       </h3>

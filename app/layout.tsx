@@ -19,6 +19,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`hide-scrollbar ${inter.className}`}>
+      <div className="main">
+            <div className="gradient2" />
+          </div>
         <Navbar />
         {children}
         <Footer />

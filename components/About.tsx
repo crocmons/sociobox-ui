@@ -10,18 +10,27 @@ const About = () => {
       className='flex justify-between items-center max-lg:flex-col gap-10 w-full max-container'
     >
       <div className='flex flex-1 flex-col'>
-        <h2 className='font-palanquin capitalize text-5xl lg:max-w-lg font-bold'>
+        <h2 className='font-palanquin capitalize text-5xl lg:max-w-lg font-bold text-[#2D1032] space-y-2'>
           We Provide You
-          <span className='text-red-400'> Best </span>
-          <span className='text-red-400 py-4'>Quality </span>
+          <span className='text-[#531789]'> Best </span>
+          <span className='text-[#FF1791] py-4'>Quality </span>
         </h2>
-        <p className='mt-4 lg:max-w-lg info-text'>
-          Ensuring premium comfort and style, our meticulously crafted dresses
-          is designed to elevate your experience, providing you with unmatched
-          quality, innovation, and a touch of elegance.
+        <p className='mt-6 py-4 lg:max-w-lg info-text text-[#3C1642]'>
+        The Socio Box is proudly led by Azhar Shaikh, better known to millions as ’Pinku’ from the beloved Indian sitcom, Taarak Mehta Ka Ooltah Chashmah. 
+We handle everything from talent discovery and management to breathtaking video production and expert social media management. Plus, our powerful influencer marketing platform connects you with the perfect brand ambassadors
+Imagine not just boosting your reach, but using your influence for good. Partner with influencers who share your values and create campaigns that spark positive change.
+We help you find causes that resonate with your brand and leverage influencer voices to make a real impact.
+
+
+
         </p>
-        <p className='mt-6 lg:max-w-lg info-text'>
-          Our dedication to detail and excellence ensures your satisfaction
+        <p className='py-2 lg:max-w-lg info-text'>
+        Here is why the socio box can be your right companion for your growth
+Connecting brands and influencers with shared values and a commitment to social responsibility.
+Facilitating campaigns that drive both business growth and positive impact.
+Amplifying voices that promote positive change and make the world a better place
+
+
         </p>
         <Link href={'https://www.instagram.com/thesociobox'} className='mt-11'>
           <Button label='Our Instagram Page' iconURL={<BiRightArrowAlt />}/>
