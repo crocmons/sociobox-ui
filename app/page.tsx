@@ -9,7 +9,7 @@ import Posts from '@/components/Posts'
 export default function Home() {
   return (
     <main className='mx-auto'>
-      <section className='xl:padding-l padding-b'>
+      <section className='xl:padding-l'>
       <HeroSection />
       </section>
       <section>
