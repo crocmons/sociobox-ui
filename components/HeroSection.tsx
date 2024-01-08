@@ -68,7 +68,7 @@ Hi, we are the socio box your one step door to all the questions that took you h
    {/* right container  */}
         {/* <div className='relative flex flex-1 justify-center items-center xl:min-h-screen max-xl:py-56 mt-28 bg-white bg-cover mx-auto'> */}
 
-<div className='relative sm:px-10 py-5 sm:pt-20 pb-5 max-w-[560px] xl:h-[700px] w-full bg-[#FFF700] rounded-[30px] sm:mx-auto xl:my-6'>
+<div className='relative sm:px-10 py-10 sm:pt-20 pb-14 max-w-[600px] xl:h-auto w-full bg-hero bg-cover bg-center rounded-[30px] sm:mx-auto xl:my-10 mx-auto'>
 
 
         <Carousel
@@ -86,7 +86,7 @@ Hi, we are the socio box your one step door to all the questions that took you h
                   alt={'testing demo img'}
                   width={484}
                   height={484}
-                  className=' object-contain'
+                  className='rounded object-contain'
                   key={imgs.alt}
                 />
             ))

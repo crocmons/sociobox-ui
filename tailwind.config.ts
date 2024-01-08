@@ -13,7 +13,7 @@ const config: Config = {
         montserrat: ['Montserrat', 'sans-serif'],
       },
       backgroundImage: {
-        'hero': "url('/feature-bg.png')",
+        'hero': "url('/hero.svg')",
         'card': "url('/thumbnail.svg')",
       },
       screens: {

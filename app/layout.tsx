@@ -20,7 +20,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`hide-scrollbar ${inter.className}`}>
       <div className="main">
-            <div className="gradient2" />
+            <div className="gradient" />
           </div>
         <Navbar />
         {children}

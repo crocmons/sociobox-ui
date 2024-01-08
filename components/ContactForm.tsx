@@ -1,5 +1,5 @@
 "use client"
-import React, {  useState } from 'react'
+import React, {  useRef, useState } from 'react'
 import {z} from "zod"
 import { zodResolver } from '@hookform/resolvers/zod';
 import {useForm, SubmitHandler} from "react-hook-form"
@@ -27,6 +27,7 @@ const ContactForm = () => {
     
     const [err, setErr] = useState(false)
     const [success, setSuccess] = useState(false)
+    const formRef = useRef();
     const [prevStep, setPrevStep] = useState(0)
     const [currentStep, setcurrentStep] = useState(0)
     const delta = currentStep - prevStep
@@ -68,11 +69,11 @@ const ContactForm = () => {
     })
 
     const processForm:SubmitHandler<Inputs> = async (data) =>{
-        console.log(data)
-        await emailjs.sendForm('service_cl81fsw', 'template_k7dllwp', 'SZaTpe3tByV38AxZK')
-        .then((success) => {
+        console.log(data.fullName)
+        await emailjs.sendForm('service_cl81fsw', 'template_k7dllwp', formRef.current, 'SZaTpe3tByV38AxZK')
+        .then((data) => {
            setSuccess(true)
-           alert(success.text)   
+           alert('successfully send')
         }, (error) => {
           setErr(true)
             alert(error.text);
@@ -132,6 +133,7 @@ const ContactForm = () => {
         <form
             className="w-full h-auto lg:w-[500px] space-y-6 mt-4 mx-auto flex flex-col bg-slate-200 border border-gray-100 shadow-2xl p-4 xl:p-8 rounded-lg justify-center text-[#531789] text-start "
             onSubmit={handleSubmit(processForm)}
+            ref={formRef}
             >
                 <div className="flex flex-col">
                 <label htmlFor="name">Full Name</label>
