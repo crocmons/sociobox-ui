@@ -27,7 +27,7 @@ const ContactForm = () => {
     
     const [err, setErr] = useState(false)
     const [success, setSuccess] = useState(false)
-    const formRef = useRef();
+    const formRef = useRef<HTMLFormElement>(null);
     const [prevStep, setPrevStep] = useState(0)
     const [currentStep, setcurrentStep] = useState(0)
     const delta = currentStep - prevStep
@@ -70,6 +70,7 @@ const ContactForm = () => {
 
     const processForm:SubmitHandler<Inputs> = async (data) =>{
         console.log(data.fullName)
+        if (formRef.current) {
         await emailjs.sendForm('service_cl81fsw', 'template_k7dllwp', formRef.current, 'SZaTpe3tByV38AxZK')
         .then((data) => {
            setSuccess(true)
@@ -78,7 +79,7 @@ const ContactForm = () => {
           setErr(true)
             alert(error.text);
         });
-
+      } 
         reset()
         
     }
