@@ -31,7 +31,7 @@ const HeroSection = () => {
     >
    <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x mt-24 md:mt-0">
     <p className='text-xl font-medium text-[#FF1791]'>Azhar shaikh presents</p>
-    <h1 className='mt-5 xl:py-4 py-2 text-4xl xl:text-8xl font-palanquin sm:max-sm:text-[72px] sm:max-sm:leading-[82] font-bold leading-none mx-auto '>
+    <h1 className='mt-5 xl:py-4 py-2 text-4xl xl:text-8xl font-palanquin sm:max-sm:text-[72px] sm:max-sm:leading-[82] font-bold leading-none'>
 
     <span className='text-[14px] xl:text-4xl'>Influencer Marketing Made Easy </span>
     <br />
