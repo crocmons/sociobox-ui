@@ -31,13 +31,13 @@ const HeroSection = () => {
     >
    <div className="relative xl:w-2/5 flex flex-col justify-center items-start w-full max-xl:padding-x mt-24 md:mt-0">
     <p className='text-xl font-medium text-[#FF1791]'>Azhar shaikh presents</p>
-    <h1 className='mt-10 xl:py-4 py-2 text-4xl xl:text-8xl font-palanquin sm:max-sm:text-[72px] sm:max-sm:leading-[82] font-bold leading-none mx-auto '>
+    <h1 className='mt-5 xl:py-4 py-2 text-4xl xl:text-8xl font-palanquin sm:max-sm:text-[72px] sm:max-sm:leading-[82] font-bold leading-none mx-auto '>
 
     <span className='text-[14px] xl:text-4xl'>Influencer Marketing Made Easy </span>
     <br />
 
       <span className='xl:bg-purple-200 xl:whitespace-nowrap relative xl:z-10 xl:pr-10 xl:bg-opacity-10 mt-6'>The Socio Box</span>
-      
+      <br />
       <span className='text-[#FF1791] inline-block mt-2 text-md'> Influencer </span> 
 
       
